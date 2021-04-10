@@ -5,6 +5,7 @@ const elLetters = document.getElementById('letters')
 const words = ['nana', 'nene', 'nini', 'nono', 'nunu']
 const current = []
 const past = []
+let mouseY = null
 
 const saveHistory = () => past.push(current)
 
@@ -29,15 +30,11 @@ const setCurrent = (letters) => letters.forEach(letter => current.push(letter))
 
 const getLetters = () => getWord().split('')
 
-let mouseY = null
-
 const onTouch = ({ type, target, changedTouches: [ { pageY: y } ] }) => {
-  const { innerText } = target
-
   if (type === 'touchstart') {
     mouseY = y
   } else {
-    const charCode = innerText.charCodeAt() + (mouseY - y > 0 ? -1 : 1)
+    const charCode = target.innerText.charCodeAt() + (mouseY - y > 0 ? -1 : 1)
     if (charCode > 122 || charCode < 97) return
     target.innerText = String.fromCharCode(charCode)
   }
