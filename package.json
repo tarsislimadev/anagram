@@ -1,0 +1,21 @@
+{
+  "name": "com.tmvdl.nini",
+  "displayName": "Nini",
+  "version": "0.1.0",
+  "description": "A swipe app.",
+  "main": "index.js",
+  "scripts": { },
+  "keywords": [
+    "swipe"
+  ],
+  "author": "Tarsis de Lima (http://github.com/tmvdl)",
+  "license": "MIT",
+  "devDependencies": {
+    "cordova-plugin-whitelist": "^1.3.4"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-whitelist": {}
+    }
+  }
+}
