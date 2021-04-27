@@ -1,9 +1,10 @@
 version: '3'
 
+# yes | keytool -genkey -v -alias alias -keystore /builds/keystore.jks -keyalg RSA -storepass password -keypass password -validity 1 -keysize 2048
+
 services:
   app:
-    build: .
+    image: tmvdl/android:cordova
     volumes:
+      - ./app:/app
       - ./builds:/builds
-    ports:
-      - 8000:8000

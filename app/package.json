@@ -4,18 +4,22 @@
   "version": "0.1.0",
   "description": "A swipe app.",
   "main": "index.js",
-  "scripts": { },
+  "scripts": {},
   "keywords": [
     "swipe"
   ],
   "author": "Tarsis de Lima (http://github.com/tmvdl)",
   "license": "MIT",
   "devDependencies": {
+    "cordova-android": "^9.1.0",
     "cordova-plugin-whitelist": "^1.3.4"
   },
   "cordova": {
     "plugins": {
       "cordova-plugin-whitelist": {}
-    }
+    },
+    "platforms": [
+      "android"
+    ]
   }
 }
