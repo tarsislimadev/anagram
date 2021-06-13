@@ -1,6 +1,6 @@
 
 // admob id format ca-app-pub-xxxxxxxxxxxxxxxxxxx/xxxxxxxxxx
-admob.initAdmob('admob banner ID', 'admob interstitial ID')
+admob.initAdmob('ca-app-pub-8803365396237758/7775543237', 'admob interstitial ID')
 
 // show banner at the top of app  
 const admobParam = new admob.Params()
