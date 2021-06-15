@@ -8,6 +8,7 @@
     <preference name="Orientation" value="landscape" />
     <preference name="Fullscreen" value="true" />
     <preference name="BackgroundColor" value="0x000000" />
+    <preference name="AndroidXEnabled" value="true" />
     <icon src="res/icon.png" density="ldpi" />  <!-- 36x36 px -->
     <icon src="res/icon.png" density="mdpi" /> <!-- 48x48 px -->
     <icon src="res/icon.png" density="hdpi" /> <!-- 72x72 px -->
