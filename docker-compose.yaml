@@ -6,7 +6,7 @@ services:
   app:
     image: tmvdl/android:cordova
     environment: 
-      - CORDOVA_VALIDITY=450
+      - CORDOVA_VALIDITY=11000
     volumes:
       - ./app:/app
       - ./builds:/builds
