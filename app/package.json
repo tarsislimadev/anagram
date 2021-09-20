@@ -1,7 +1,7 @@
 {
   "name": "com.tmvdl.nini",
   "displayName": "Nini",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A swipe app.",
   "main": "index.js",
   "scripts": {},
