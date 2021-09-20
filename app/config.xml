@@ -8,11 +8,14 @@
     <preference name="Orientation" value="landscape" />
     <preference name="Fullscreen" value="true" />
     <preference name="BackgroundColor" value="0x000000" />
-    <preference name="AndroidXEnabled" value="true" />
+    <!-- <preference name="android-targetSdkVersion" value="30" /> -->
     <icon src="res/icon.png" density="ldpi" />  <!-- 36x36 px -->
     <icon src="res/icon.png" density="mdpi" /> <!-- 48x48 px -->
     <icon src="res/icon.png" density="hdpi" /> <!-- 72x72 px -->
     <icon src="res/icon.png" density="xhdpi" /> <!-- 96x96 px -->
     <icon src="res/icon.png" density="xxhdpi" /> <!-- 144x144 px -->
     <icon src="res/icon.png" density="xxxhdpi" /> <!-- 192x192 px -->
+    <!-- <platform name="android">
+        <uses-sdk android:targetSdkVersion="30" />
+    </platform> -->
 </widget>
