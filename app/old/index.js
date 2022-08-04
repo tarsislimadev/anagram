@@ -48,8 +48,8 @@ const showLetters = () => {
   current.forEach(letter => {
     const td = document.createElement('td')
     td.innerText = letter
-    td.addEventListener("touchstart", onTouch, false);
-    td.addEventListener("touchend", onTouch, false);
+    td.addEventListener('touchstart', onTouch)
+    td.addEventListener('touchend', onTouch)
     tr.appendChild(td)
   })
 
