@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nini</title>
+</head>
+
+<body>
+  <div id="app"></div>
+
+  <script src="./nTag.js"></script>
+  <script>
+    nTag.fromElement(document.body)
+      .setStyle('background-color', '#000000')
+      .setStyle('font-family', 'sans-serif')
+      .setStyle('font-size', '8vw')
+      .setStyle('color', '#ffffff')
+
+    const app = nTag.fromId('app')
+
+    const center = new nCenter()
+    center.setStyle('', (() => {
+      const h = window.innerHeight
+      console.log({ h })
+    })())
+
+    const letters = new nFlex()
+    letters.setContainerStyle('text-align', 'center')
+    letters.setStyle('margin', '8rem auto')
+    letters.setStyle('width', '16rem')
+
+    class nLetter extends nTag {
+      constructor(letter) {
+        super({ component: { name: 'letter' } })
+
+        let ln = letter
+
+        const self = this
+
+        let touch = null
+
+        self.setStyle('padding', '0.5rem')
+        self.setText(String.fromCharCode(ln))
+
+        self.on('touchstart', ({ changedTouches: [{ pageY }] }) => touch = pageY)
+        self.on('touchend', ({ changedTouches: [{ pageY }] }) => {
+          touch - pageY > 0 ? ++ln : --ln
+          if (ln < 97) ln = 97 // a
+          if (ln > 122) ln = 122 // z
+          self.setText(String.fromCharCode(ln))
+        })
+
+      }
+    }
+
+    Array.from([110, 105, 110, 105]).map((l) => letters.append(new nLetter(l)))
+
+    center.append(letters)
+
+    app.append(center)
+  </script>
+
+</body>
+
+</html>
