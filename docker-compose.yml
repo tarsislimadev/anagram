@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  app:
+    hostname: app
+    build: './app'
+    restart: always
+    volumes:
+      - './app/www:/usr/share/nginx/html'
+    ports:
+      - '80:80'
