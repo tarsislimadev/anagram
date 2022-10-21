@@ -45,7 +45,10 @@
         self.setStyle('padding', '0.5rem')
         self.setText(String.fromCharCode(ln))
 
-        self.on('touchstart', ({ changedTouches: [{ pageY }] }) => touch = pageY)
+        self.on('touchstart', ({ changedTouches: [{ pageY }] }) => {
+          touch = pageY
+        })
+
         self.on('touchend', ({ changedTouches: [{ pageY }] }) => {
           touch - pageY > 0 ? ++ln : --ln
           if (ln < 97) ln = 97 // a
