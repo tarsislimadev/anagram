@@ -1,1 +1,1 @@
-docker-compose -f $(pwd)/docker-compose.yml down --remove-orphans --rmi all 
+docker-compose -f ./docker-compose.yaml down --remove-orphans --rmi all 
