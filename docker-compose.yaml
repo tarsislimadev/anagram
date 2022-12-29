@@ -2,8 +2,11 @@ version: '3'
 
 services:
   app:
-    build: './app'
-    volumes:
-      - './app/www:/usr/share/nginx/html'
+    build: './src/app'
     ports:
-      - '80:80'
+      - '2000:80'
+
+  www:
+    build: './src/www'
+    ports:
+      - '3000:80'
