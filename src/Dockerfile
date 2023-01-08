@@ -8,8 +8,6 @@ WORKDIR /app/nini
 
 COPY app www
 
-COPY cp.sh .
-
 RUN cordova platform add android
 
 RUN cordova build android
