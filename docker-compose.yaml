@@ -2,7 +2,8 @@ version: '3'
 
 services:
 
-  app:
+  github-release:
+    image: 'github-release'
     build: './src'
 
   www:
