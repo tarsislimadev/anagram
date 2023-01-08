@@ -19,7 +19,7 @@ jobs:
         run: docker-compose build github-release
 
       - name: Export app
-        run: docker run -v $(pwd)/dist:/dist github-release sh cp -rfv /app/platforms/android/app/build/outputs/apk/debug/app-debug.apk /dist
+        run: docker run -v $(pwd)/dist:/dist github-release cp -rfv /app/platforms/android/app/build/outputs/apk/debug/app-debug.apk /dist
 
       - name: Create release
         run: gh release create v$( date +%Y%m%d%H%M ) ./dist/app-debug.apk
