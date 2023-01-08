@@ -2,11 +2,11 @@ FROM tmvdl/android:cordova
 
 WORKDIR /app
 
-RUN cordova create nini com.brtmvdl.nini nini
+# RUN cordova create nini com.brtmvdl.nini nini
 
-WORKDIR /app/nini
+# WORKDIR /app/nini
 
-COPY app www
+COPY . .
 
 RUN cordova platform add android
 
