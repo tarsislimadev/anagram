@@ -15,12 +15,6 @@ jobs:
       - name: Check out
         uses: actions/checkout@v3
 
-      - name: Install www
-        run: docker-compose run www npm i
-
-      - name: Build www
-        run: docker-compose run www npm run build
-
       - name: Docker build
         run: docker-compose build github-release
 
