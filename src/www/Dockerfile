@@ -1,3 +1,13 @@
-FROM nginx:alpine
+FROM tmvdl/android:cordova
 
-COPY ./www /usr/share/nginx/html
+WORKDIR /app
+
+RUN cordova create nini com.brtmvdl.nini nini
+
+WORKDIR /app/nini
+
+COPY app www
+
+RUN cordova platform add android
+
+RUN cordova build android
