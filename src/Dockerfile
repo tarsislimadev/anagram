@@ -1,3 +1,3 @@
 FROM nginx:stable
 
-COPY ./src/www/www /usr/share/nginx/html
+COPY ./www/www /usr/share/nginx/html
