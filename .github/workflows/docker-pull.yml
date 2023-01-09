@@ -11,3 +11,5 @@ jobs:
     steps:
       - name: Docker pull
         run: docker pull tmvdl/projects -a
+      - name: OK
+        run: echo OK
