@@ -1,10 +1,10 @@
-FROM tmvdl/android:cordova
+FROM tmvdl/android:ionic
 
 WORKDIR /app
 
-# RUN cordova create nini com.brtmvdl.nini nini
+RUN cordova create nini com.brtmvdl.nini nini
 
-# WORKDIR /app/nini
+WORKDIR /app/nini
 
 COPY . .
 
