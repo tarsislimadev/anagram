@@ -5,12 +5,9 @@ services:
   docker-push:
     image: 'tmvdl/projects:nini'
     build: './src'
+    ports:
+      - '80:80'
 
   github-release:
     image: 'github-release'
     build: './src/www'
-
-  www:
-    build: './src/www'
-    ports:
-      - '80:80'
