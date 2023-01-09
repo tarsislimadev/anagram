@@ -2,6 +2,10 @@ version: '3'
 
 services:
 
+  docker-push:
+    image: 'tmvdl/projects:nini'
+    build: './src'
+
   github-release:
     image: 'github-release'
     build: './src/www'
