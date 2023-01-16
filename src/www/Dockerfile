@@ -2,9 +2,9 @@ FROM tmvdl/android:ionic-jdk8
 
 WORKDIR /app
 
-RUN cordova create nini com.brtmvdl.nini nini
+RUN cordova create fifty com.brtmvdl.fifty fifty
 
-WORKDIR /app/nini
+WORKDIR /app/fifty
 
 COPY . .
 
