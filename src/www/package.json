@@ -1,6 +1,6 @@
 {
-  "name": "com.tmvdl.fifty",
-  "displayName": "fifty",
+  "name": "com.tmvdl.swipe",
+  "displayName": "swipe",
   "version": "0.1.0",
   "description": "A swipe app.",
   "main": "index.js",

@@ -1,10 +1,10 @@
-FROM tmvdl/android:ionic-jdk8
+FROM tmvdl/android:ionic
 
 WORKDIR /app
 
-RUN cordova create fifty com.brtmvdl.fifty fifty
+RUN cordova create swipe com.brtmvdl.swipe swipe
 
-WORKDIR /app/fifty
+WORKDIR /app/swipe
 
 COPY . .
 
