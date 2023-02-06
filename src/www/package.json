@@ -1,12 +1,12 @@
 {
-  "name": "com.tmvdl.swipe",
-  "displayName": "swipe",
+  "name": "com.tmvdl.anagram",
+  "displayName": "anagram",
   "version": "0.1.0",
-  "description": "A swipe app.",
+  "description": "A anagram app.",
   "main": "index.js",
   "scripts": {},
   "keywords": [
-    "swipe"
+    "anagram"
   ],
   "author": "Tarsis de Lima (http://github.com/tmvdl)",
   "license": "MIT",

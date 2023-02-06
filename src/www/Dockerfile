@@ -2,9 +2,9 @@ FROM tmvdl/android:app
 
 WORKDIR /app
 
-RUN cordova create swipe com.brtmvdl.swipe swipe
+RUN cordova create anagram com.brtmvdl.anagram anagram
 
-WORKDIR /app/swipe
+WORKDIR /app/anagram
 
 COPY . .
 
