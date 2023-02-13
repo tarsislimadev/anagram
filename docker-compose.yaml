@@ -1,6 +1,8 @@
 version: '3'
 
 services:
+  www:
+    build: './src/www'
 
   docker-push:
     image: 'tmvdl/projects:anagram'
