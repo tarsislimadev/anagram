@@ -7,8 +7,8 @@ A anagram app
 ## How to
 
 ```
-wget https://github.com/brtmvdl/money/releases/download/latest/app-debug.apk \
-  --output-file=money.apk
+wget https://github.com/brtmvdl/anagram/releases/download/latest/app-debug.apk \
+  --output-file=anagram.apk
 ```
 
 ## Documentation
