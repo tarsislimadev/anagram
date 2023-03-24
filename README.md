@@ -4,6 +4,13 @@
 
 A anagram app
 
+## How to
+
+```
+wget https://github.com/brtmvdl/money/releases/download/latest/app-debug.apk \
+  --output-file=money.apk
+```
+
 ## Documentation
 
 [See more](./docs/how-to.md)
