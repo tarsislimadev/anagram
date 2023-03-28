@@ -3,12 +3,14 @@ version: '3'
 services:
   www:
     build: './src/www'
+    volumes:
+      - './src/www/www:/usr/share/nginx/html'
+    ports:
+      - '80:80'
 
   docker-push:
     image: 'tmvdl/projects:anagram'
     build: './src'
-    ports:
-      - '80:80'
 
   github-release:
     image: 'github-release'
