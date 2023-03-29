@@ -6,10 +6,7 @@ A anagram app
 
 ## How to
 
-```
-wget https://github.com/brtmvdl/anagram/releases/download/latest/app-debug.apk \
-  --output-file=anagram.apk
-```
+<img src="https://api.qrserver.com/v1/create-qr-code/?size=400x400&margin=0&data=https://github.com/brtmvdl/anagram/releases/download/latest/app-debug.apk" alt="apk" />
 
 ## Documentation
 
