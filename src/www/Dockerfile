@@ -1,3 +1,5 @@
-FROM nginx:stable
+FROM nginx:alpine
 
-COPY ./www /usr/share/nginx/html
+WORKDIR  /usr/share/nginx/html
+
+COPY www . 
